@@ -13,10 +13,20 @@
 
 
 <body>
+
+  <div class="jumbotron text-center"></div>
+  <div class="album py-5 bg-light">
+    <div class="container">
+
 <h1>Alertas</h1>
 
-<p>Sirven para dar mensajes de retroalimentación a los usuarios. Bootstrap ofrece algunas opciones de alerta básicos y flexibles, que mediante el estilo ofrecen retroalimentación contextual al usuario. </p>
-        
+<br>
+
+<h5>Sirven para dar mensajes de retroalimentación a los usuarios. Bootstrap ofrece algunas opciones de alerta básicos y flexibles, que mediante el estilo ofrecen una retroalimentación contextual al usuario. </h5>
+    
+
+<br><br>
+
 <div class="alert alert-primary" role="alert">
   Vamos a ver algunos ejemplos. Y abajo de cada uno el código que usamos. Esta es una alerta primaria (primary) 
 </div>
@@ -90,9 +100,12 @@
         <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
       </svg>
       <div>
-        ATENTI. Como esta es una alerta clara (light), aprovechamos para mostrar que se le puede agregar íconos. 
+        ATENTI. Esta es una alerta clara (light), y aprovechamos para mostrar que también se le puede agregar íconos alas alertas. Hay varios íconos de Bootstrap y también se pueden usar otras imágenes que tengas almacenadas. 
+       
+      
       </div>
     </div>
+  
 
     <p>&lt;div class="alert alert-light d-flex align-items-center" role="alert"&gt;
       <br> &lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:"&gt;
@@ -115,11 +128,21 @@
 <br> La octava y última clase contextual es la oscura (dark). Y mirala bien, porque le agregamos la opción de descartarla. Probá pinchar la cruz:
 <br> &lt;button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">&lt;/button&gt;
 <br> &lt;/div&gt;
+<br>
+<br>
+
+<P> REVISAR TEXTO Para que funcione este tipo de alerta es necesario haber cargado el complemento de alerta o el JavaScript de Bootstrap compilado.
+  Agrega un botón de cierre y la clase .alert-dismissible, que agrega padding adicional a la derecha de la alerta y posiciona el botón de cierre.
+  En el botón de cerrar, agrega el atributo data-bs-dismiss="alert", que activa la funcionalidad de JavaScript. Asegúrate de usar el elemento &lt;button&gt; para un comportamiento adecuado en todos los dispositivos.
+  Para animar alertas al descartarlas, asegúrate de agregar las clases .fade y .show.</P>
+
+<P>Para seguir profundizando:</P>
+<a>https://getbootstrap.esdocu.com/docs/5.1/components/alerts/</a>
 
 
-
-
-
+</div>
+</div>
+</div>
 
 
 
