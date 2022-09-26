@@ -9,22 +9,76 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container mt-5 mb-5 d-flex flex-column align-items-center">
-        <div class="card mb-4">
-            <div class="card-body">
-              <p>Así se ve el texto dentro del cuerpo de una tarjeta.</p>
+    <div class="container mt-5 mb-5 d-flex flex-column align-items-center">    
+        <h1 class="mb-5 font-style-italic">Tarjetas de Bootstrap</h1>
+        <div class="mb-5 w-75">
+            <div class="card">
+                <p class="mb-0">Esto es una tarjeta básica de Bootstrap. Como podrás notar, no tiene márgenes 
+                   ni rellenos de espaciado, así que para utilizarla por sí sola,
+                   su visualización no es muy linda. Vamos a utilizar la clase <b>card</b> dentro de
+                   un <b>&lt;div&gt;</b>
+                </p>
             </div>
-        </div>
-        <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;">        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"card mb-4"</span>&gt;</span>
-            <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"card-body"</span>&gt;</span>
-              <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">p</span>&gt;</span>Así se ve el texto dentro del cuerpo de una tarjeta.<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">p</span>&gt;</span>
-            <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+            <pre class="hljs mt-4 rounded" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"card"</span>&gt;</span>
+        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"mb-0"</span>&gt;</span>Esto es una tarjeta básica de Bootstrap. Como podrás notar, no tiene márgenes 
+            ni rellenos de espaciado, así que para utilizarla por sí sola,
+            su visualización no es muy linda. Vamos a utilizar la clase <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">b</span>&gt;</span>card<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">b</span>&gt;</span> dentro de un
+            <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">b</span>&gt;</span>&amp;lt;div&amp;gt;<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">b</span>&gt;</span>
+        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">p</span>&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span></pre>
+                <hr>
+</div>
+
+        <div class="mb-5 w-75">
+            <div class="card">
+                <div class="card-body">
+                  <p class="mb-0">Normalmente utilizaremos las tarjetas con un cuerpo de tarjeta de la clase
+                    <b>card-body</b>, así se ve el texto dentro del cuerpo de una tarjeta. Si no se especifíca un ancho,
+                     el mismo toma el tamaño que necesite para mostrar el contenido.
+                  </p>
+                </div>
+            </div>
+            <pre class="hljs mt-4 rounded" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;">        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"card"</span>&gt;</span>
+                <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"card-body"</span>&gt;</span>
+                  <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">p</span>&gt;</span>
+                  Así se ve el texto dentro del cuerpo de una tarjeta. Si no se especifíca un ancho,
+                  el mismo toma el tamaño que necesite para mostrar el contenido.
+                  <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">p</span>&gt;</span>
+                <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
         <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span></pre>
-        
-        <footer class="d-flex justify-content-center">
-            <a class="btn btn-dark p-2 mt-4" href="index.html">Volver a inicio</a>
-        </footer>
+    <hr>    
     </div>
+
+        <div class="mb-5 w-75 d-flex flex-column align-items-center">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Título de tarjetas</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Esto es un subtítulo</h6>
+                    <p class="card-text mb-0">Las tarjetas también suelen llevar un título y enlaces,
+                    también notarás que el tamaño de esta tarjeta es mucho más pequeño,
+                    para esto modificamos el <b>width</b> en un atributo <b>style</b>.
+                    Veamos como agregar esto a nuestra tarjeta:</p>
+                </div>
+            </div>
+            <pre class="hljs mt-4 rounded" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"card"</span> <span class="hljs-attr">style</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"width: 18rem;"</span>&gt;</span>
+        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"card-body"</span>&gt;</span>
+            <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"card-title"</span>&gt;</span>Título de tarjetas<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">h5</span>&gt;</span>
+            <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">h6</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"card-subtitle mb-2 text-muted"</span>&gt;</span>Esto es un subtítulo<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">h6</span>&gt;</span>
+            <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"card-text mb-0"</span>&gt;</span>Las tarjetas también suelen llevar un título y enlaces,
+            también notarás que el tamaño de esta tarjeta es mucho más pequeño,
+            para esto modificamos el <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">b</span>&gt;</span>width<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">b</span>&gt;</span> en un atributo <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">b</span>&gt;</span>style<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">b</span>&gt;</span>.
+            Veamos como agregar esto a nuestra tarjeta:<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">p</span>&gt;</span>
+        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span></pre>
+            <hr style="width: 100%">
+</div>
+        
+
+<footer class="d-flex justify-content-center">
+    <a class="btn btn-dark p-2 mt-4" href="index.html">Volver a inicio</a>
+</footer>
+
+</div>
 
 </body>
 </html>
