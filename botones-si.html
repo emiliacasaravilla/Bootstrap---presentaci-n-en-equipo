@@ -16,22 +16,42 @@
 <div class="container mt-4 mb-4">
   <h1 class="d-flex justify-content-center mb-5">Botones</h1>
   
-  <div class="btn-group d-flex justify-content-center">
-    <button type="button" class="btn btn-primary">PRIMARIO (class="btn btn-primary")</button>
-    <button type="button" class="btn btn-secondary">SECUNDARIO (class="btn btn-secondary")</button>
-    <button type="button" class="btn btn-success">EXITO (class="btn btn-success")</button>
-    <button type="button" class="btn btn-danger">PELIGRO (class="btn btn-danger")</button>
-    <button type="button" class="btn btn-warning">ADVERTENCIA (class="btn btn-warning")</button>
-    <button type="button" class="btn btn-info">INFORMACION (class="btn btn-info")</button>
-    <button type="button" class="btn btn-light">CLARO (class="btn btn-light")</button>
-    <button type="button" class="btn btn-dark">OSCURO (class="btn btn-dark")</button>
-    <button type="button" class="btn btn-link">Enlace (class="btn btn-link")</button>
+  <div class="justify-content-center">
+    <button type="button" class="btn btn-primary">PRIMARIO <br>(class="btn <br>btn-primary")</button>
+    <button type="button" class="btn btn-secondary">SECUNDARIO <br>(class="btn <br>btn-secondary")</button>
+    <button type="button" class="btn btn-success">EXITO <br>(class="btn <br>btn-success")</button>
+    <button type="button" class="btn btn-danger">PELIGRO <br>(class="btn <br>btn-danger")</button>
+    <button type="button" class="btn btn-warning">ADVERTENCIA <br>(class="btn <br>btn-warning")</button>
+    <button type="button" class="btn btn-info">INFORMACION <br>(class="btn <br>btn-info")</button>
+    <button type="button" class="btn btn-light">CLARO <br>(class="btn <br>btn-light")</button>
+    <button type="button" class="btn btn-dark">OSCURO <br>(class="btn <br>btn-dark")</button>
+    <button type="button" class="btn btn-link">Enlace <br>(class="btn <br>btn-link")</button>
+
+    
   </div>
   
   <br>
-  <p>Ejemplo de cómo escribir el código:</p>
+  <p>Ejemplo de cómo escribir el código de botón primario:</p>
   <pre class="hljs rounded" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"> <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary"</span>&gt;</span> PRIMARIO (class="btn btn-primary")<span class="hljs-tag" style="color: rgb(239, 97, 85);"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span></pre>
   
+  <div class="mt-5">
+    <button type="button" class="btn btn-outline-primary">Estos</button>
+    <button type="button" class="btn btn-outline-secondary">son</button>
+    <button type="button" class="btn btn-outline-success">iguales</button>
+    <button type="button" class="btn btn-outline-danger">a los</button>
+    <button type="button" class="btn btn-outline-warning">8 primeros</button>
+    <button type="button" class="btn btn-outline-info">pero sin</button>
+    <button type="button" class="btn btn-outline-light">fondo!</button>
+    <button type="button" class="btn btn-outline-dark">(hay que contemplar el fondo que estamos usando para que se lea bien)</button>
+    
+  </div>
+  
+  <p class="m-3">Ejemplo de cómo escribir el código de un botón primerio de contorno:</p>
+  <pre class="hljs rounded" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-outline-primary"</span>&gt;</span>Estos<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span></pre>
+
+
+
+
   <p class="m-5 p-3 border border-secondary rounded" id="buttonsDescription">Etiquetas de botón
     Las clases <b>.btn</b> están diseñadas para usarse con el elemento <b>&lt;button&gt;</b>. Sin embargo, también puedes 
     usar estas clases en elementos <b>&lt;a&gt;</b> o <b>&lt;input&gt;</b> (aunque algunos navegadores pueden aplicar una 
@@ -43,7 +63,7 @@
     de asistencia, como los lectores de pantalla.</p>
   
   
-      <div class="btn-group d-flex justify-content-center">
+      <div class="d-flex justify-content-center">
         <a class="btn btn-primary m-1" href="#" role="button">Este es un enlace con el rol de botón</a>
         <button class="btn btn-primary m-1" type="submit">Este es un botón de tipo submit</button>
         <input class="btn btn-primary m-1" type="button" value="Este es un input de tipo botón">
@@ -52,46 +72,143 @@
       </div>
      <br>
 
-     <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-group d-flex justify-content-center"</span>&gt;</span>
-      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary m-1"</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#"</span> <span class="hljs-attr">role</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span>&gt;</span>Este es un enlace con el rol de botón<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span> <span class="hljs-tag" style="color: rgb(239, 97, 85);"></span>
-      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary m-1"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"submit"</span>&gt;</span>Este es un botón de tipo submit<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span> <span class="hljs-tag" style="color: rgb(239, 97, 85);"></span>
-      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary m-1"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">value</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"Este es un input de tipo botón"</span>&gt;</span> <span class="hljs-tag" style="color: rgb(239, 97, 85);"></span>
-      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary m-1"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"submit"</span> <span class="hljs-attr">value</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"Este es un input de tipo submit"</span>&gt;</span> <span class="hljs-tag" style="color: rgb(239, 97, 85);"></span>
-      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary m-1"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"reset"</span> <span class="hljs-attr">value</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"Este es un input de tipo reset"</span>&gt;</span> <span class="hljs-tag" style="color: rgb(239, 97, 85);"></span>
-<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span></pre>
-      <br>
-      <br>
+     <pre class="hljs rounded m-4" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;">      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary m-1"</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#"</span> <span class="hljs-attr">role</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span>&gt;</span>Este es un enlace con el rol de botón<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary m-1"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"submit"</span>&gt;</span>Este es un botón de tipo submit<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary m-1"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">value</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"Este es un input de tipo botón"</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary m-1"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"submit"</span> <span class="hljs-attr">value</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"Este es un input de tipo submit"</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary m-1"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"reset"</span> <span class="hljs-attr">value</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"Este es un input de tipo reset"</span>&gt;</span></pre>
+     
+   
 
-    <div class="btn-group d-flex justify-content-center">
-    <button type="button" class="btn btn-outline-primary">Estos</button>
-    <button type="button" class="btn btn-outline-secondary">son</button>
-    <button type="button" class="btn btn-outline-success">iguales</button>
-    <button type="button" class="btn btn-outline-danger">a los</button>
-    <button type="button" class="btn btn-outline-warning">8 primeros</button>
-    <button type="button" class="btn btn-outline-info">pero sin</button>
-    <button type="button" class="btn btn-outline-light">fondo!</button>
-    <button type="button" class="btn btn-outline-dark">(hay que contemplar el fondo que estamos usando para que se lea bien)</button>
-    
-  </div>
-  <br>
-  <p>Ejemplo de cómo escribir el código:</p>
-  <pre class="hljs rounded" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-outline-primary"</span>&gt;</span>Estos<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span></pre>
 
-  <br>
   
-  <div class="btn-group d-flex justify-content-center">
+  <div class="d-flex justify-content-center">
     <button type="button" class="btn btn-primary btn-lg m-2">Los botones pueden ser grandes (btn-lg)</button>
     <button type="button" class="btn btn-primary btn-sm m-2">Y también pueden ser chiquitos (btn-sm)</button>
     <button type="button" class="btn btn-primary m-2" disabled>Y también se los puede mostrar deshabilitados (disabled)</button>
   </div>
   <br>
-  <pre class="hljs rounded" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-group d-flex justify-content-center"</span>&gt;</span>
-    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary btn-lg m-2"</span>&gt;</span>Los botones pueden ser grandes (btn-lg)<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+  
+  <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;">    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary btn-lg m-2"</span>&gt;</span>Los botones pueden ser grandes (btn-lg)<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
     <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary btn-sm m-2"</span>&gt;</span>Y también pueden ser chiquitos (btn-sm)<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
-    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary m-2"</span> <span class="hljs-attr">disabled</span>&gt;</span>Y también se los puede mostrar deshabilitados (disabled)<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
-<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span></pre>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary m-2"</span> <span class="hljs-attr">disabled</span>&gt;</span>Y también se los puede mostrar deshabilitados (disabled)<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span></pre>
+
+
+
+    <div class="m-4 d-grid gap-2">
+      <button class="btn btn-primary" type="button">Se pueden agregar "botones en bloque"  </button>
+      <button class="btn btn-primary" type="button">de ancho completo.</button>
+    </div>
+  
+    <div class="m-4 d-grid gap-2  " >
+      <button class="btn btn-primary col-8 mx-auto"  type="button">También el ancho se puede ajustar</button>
+      <button class="btn btn-primary col-5 mx-auto" type="button">con clases de ancho de columna de cuadrícula.</button>
+    </div>
+
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;">    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"d-grid gap-2"</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span>&gt;</span>Se pueden agregar "botones en bloque"  <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span>&gt;</span>de ancho completo.<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+ 
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"d-grid gap-2  "</span> &gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary col-8 mx-auto"</span>  <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span>&gt;</span>También el ancho se puede ajustar<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary col-5 mx-auto"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span>&gt;</span>con clases de ancho de columna de cuadrícula.<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span></pre>
 
     <h1 class="d-flex mt-5 mb-4 justify-content-center">Grupo de botones</h1>
+
+
+    <div class="btn-group m-4" role="group" aria-label="Basic example" >
+      <button type="button" class="btn btn-primary">Para hacer botones en grupo</button>
+      <button type="button" class="btn btn-primary">hay que usar la class="btn-group" en el div que los contenga</button>
+      <button type="button" class="btn btn-primary">ponerles el atributo role="group"</button>
+    </div>
+
+    <pre class="hljs rounded" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;">    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-group m-4"</span> <span class="hljs-attr">role</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"group"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"Basic example"</span> &gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary"</span>&gt;</span>Para hacer botones en grupo<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary"</span>&gt;</span>debes usar la <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">b</span>&gt;</span>class="btn-group" en el div que los contenga<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">b</span>&gt;</span>  <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary"</span>&gt;</span>ponerles el atributo <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">b</span>&gt;</span>role="group"<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">b</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span></pre>
+
+    <div class="btn-group m-4" role="group" aria-label="Basic mixed styles example">
+      <button type="button" class="btn btn-danger">Se puede mezclar</button>
+      <button type="button" class="btn btn-warning">estilos de botones</button>
+      <button type="button" class="btn btn-outline-primary">en el mismo grupo.</button>
+    </div>
+
+    <pre class="hljs rounded" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;">  <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-group m-4"</span> <span class="hljs-attr">role</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"group"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"Basic mixed styles example"</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-danger"</span>&gt;</span>Se puede mezclar<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-warning"</span>&gt;</span>estilos de botones<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-outline-primary"</span>&gt;</span>en el mismo grupo.<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span></pre>
+
+   
+    <div class="btn-group m-4" role="group" aria-label="Basic checkbox toggle button group">
+      <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck1">Se puede hacer</label>
+    
+      <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck2">en formato de chequeo</label>
+    
+      <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck3">(type="checkbox")</label>
+    </div>
+
+    <pre class="hljs rounded" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;">   <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-group m-4"</span> <span class="hljs-attr">role</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"group"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"Basic checkbox toggle button group"</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"checkbox"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-check"</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btncheck1"</span> <span class="hljs-attr">autocomplete</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"off"</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-outline-primary"</span> <span class="hljs-attr">for</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btncheck1"</span>&gt;</span>Se puede hacer<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">label</span>&gt;</span>
+    
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"checkbox"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-check"</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btncheck2"</span> <span class="hljs-attr">autocomplete</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"off"</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-outline-primary"</span> <span class="hljs-attr">for</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btncheck2"</span>&gt;</span>en formato de chequeo<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">label</span>&gt;</span>
+    
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"checkbox"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-check"</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btncheck3"</span> <span class="hljs-attr">autocomplete</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"off"</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-outline-primary"</span> <span class="hljs-attr">for</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btncheck3"</span>&gt;</span>(type="checkbox)<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">label</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+</pre>
+
+    <div class="btn-group m-4" role="group" aria-label="Basic radio toggle button group">
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+      <label class="btn btn-outline-primary" for="btnradio1">Y también botones</label>
+    
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btnradio2">de radio</label>
+    
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btnradio3">(type="radio")</label>
+    </div>
+
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-group"</span> <span class="hljs-attr">role</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"group"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"Basic radio toggle button group"</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"radio"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-check"</span> <span class="hljs-attr">name</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btnradio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btnradio1"</span> <span class="hljs-attr">autocomplete</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"off"</span> <span class="hljs-attr">checked</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-outline-primary"</span> <span class="hljs-attr">for</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btnradio1"</span>&gt;</span>Y también botones<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">label</span>&gt;</span>
+    
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"radio"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-check"</span> <span class="hljs-attr">name</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btnradio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btnradio2"</span> <span class="hljs-attr">autocomplete</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"off"</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-outline-primary"</span> <span class="hljs-attr">for</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btnradio2"</span>&gt;</span>de radio<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">label</span>&gt;</span>
+    
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"radio"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-check"</span> <span class="hljs-attr">name</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btnradio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btnradio3"</span> <span class="hljs-attr">autocomplete</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"off"</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-outline-primary"</span> <span class="hljs-attr">for</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btnradio3"</span>&gt;</span>(type="radio")<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">label</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span></pre>
+
+    <div class="btn-group-vertical m-4">
+      <button type="button" class="btn btn-primary">Y</button>
+      <button type="button" class="btn btn-secondary">cualquiera</button>
+      <button type="button" class="btn btn-success">de</button>
+      <button type="button" class="btn btn-danger">ellos</button>
+      <button type="button" class="btn btn-warning">se</button>
+      <button type="button" class="btn btn-info">pueden</button>
+      <button type="button" class="btn btn-light">poner</button>
+      <button type="button" class="btn btn-dark">verticales</button>
+    </div>
+
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;">    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-group-vertical"</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary"</span>&gt;</span>Y<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-secondary"</span>&gt;</span>cualquiera<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-success"</span>&gt;</span>de<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-danger"</span>&gt;</span>ellos<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-warning"</span>&gt;</span>se<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-info"</span>&gt;</span>pueden<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-light"</span>&gt;</span>poner<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+      <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-dark"</span>&gt;</span>verticales<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span></pre>
 
 </div>
 <footer class="d-flex justify-content-center">
