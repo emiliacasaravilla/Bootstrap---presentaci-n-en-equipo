@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Navbar</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+	</head>
+	<body class="pt-4">
+		<div class="container">
+			<h1>Navbar</h1>
+			<p>
+				Es una barra de navegación que contiene links a otras secciones o páginas, input de búsqueda, menú de
+				usuario, etc.
+			</p>
+			<h3>Contenido</h3>
+			<p>
+				Este componente cuenta con varias formas de personalizarlo, además de algunas utilidades para facilitar
+				su uso, como la capacidad de agrupar los links en un menú colapsable en pantallas chicas.
+			</p>
+
+			<div class="mt-4">
+				<p>
+					Primero veamos el caso más simple, una barra de navegación con links:
+				</p>
+				<div>
+					<nav class="navbar navbar-expand-sm navbar-light bg-light rounded">
+						<div class="container-fluid justify-content-start">
+							<a class="navbar-brand" href="#">Navbar</a>
+							<div class="navbar-nav">
+								<a class="nav-link active" aria-current="page" href="#">Home</a>
+								<a class="nav-link" href="modal.html">Modal</a>
+								<a class="nav-link" href="dropdown.html">Dropdown</a>
+								<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Deshabilitado</a>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="mt-2">
+<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"navbar navbar-expand-sm navbar-light bg-light rounded"</span>&gt;</span>
+	<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"container-fluid justify-content-start"</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"navbar-brand"</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#"</span>&gt;</span>Navbar<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span>
+	
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"navbar-nav"</span>&gt;</span>
+			<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"nav-link active"</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"page"</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#"</span>&gt;</span>Home<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span>
+			<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#"</span>&gt;</span>Modal<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span>
+			<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#"</span>&gt;</span>Dropdown<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span>
+			<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"nav-link disabled"</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"-1"</span> <span class="hljs-attr">aria-disabled</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"true"</span>&gt;</span>Deshabilitado<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+	<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">nav</span>&gt;</span></pre>
+				</div>
+			</div>
+
+			<hr class='my-5'/>
+
+			<div class="mt-4">
+				<h2>
+					Colapsable
+				</h2>
+				<p>
+					Luego, podemos hacer que se muestre el menú de navegación en dispositivos móviles. Para ello, vamos a 
+					agregar el botón del menú:
+				</p>
+
+				<div>
+<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"navbar-toggler"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"collapse"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#navbarNavAltMarkup"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"navbarNavAltMarkup"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"false"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"Toggle navigation"</span>&gt;</span>
+	<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"navbar-toggler-icon"</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">span</span>&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span></pre>
+				</div>
+
+				<p>
+					Luego, agregamos un div por fuera del div con clase <code>navbar-nav</code>, de la siguiente manera:
+				</p>
+				<div>
+<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"collapse navbar-collapse"</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"navbarNavAltMarkup"</span>&gt;</span>
+	<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"navbar-nav"</span>&gt;</span>
+		....
+	<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span></pre>
+				</div>
+
+				<p>OJO: Debe coincidir la id del div que recién agregamos con el atributo <code>data-bs-target</code> del botón.</p>
+				<p>
+					El resultado es el siguiente
+				</p>
+				<div>
+					<nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="#">Navbar</a>
+							<button
+								class="navbar-toggler"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#navbarNav"
+								aria-controls="navbarNav"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+							>
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNav">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="#">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="modal.html">Modal</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="dropdown.html">Dropdown</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
+											>Deshabilitado</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+
+				<div class="mt-2">
+<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"navbar navbar-expand-lg navbar-light bg-light"</span>&gt;</span>
+	<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"container-fluid"</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"navbar-brand"</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#"</span>&gt;</span>Navbar<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"navbar-toggler"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"collapse"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#navbarNavAltMarkup"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"navbarNavAltMarkup"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"false"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"Toggle navigation"</span>&gt;</span>
+			<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"navbar-toggler-icon"</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">span</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"collapse navbar-collapse"</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"navbarNavAltMarkup"</span>&gt;</span>
+			<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"navbar-nav"</span>&gt;</span>
+				<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"nav-link active"</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"page"</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#"</span>&gt;</span>Home<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span>
+				<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#"</span>&gt;</span>Modal<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span>
+				<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#"</span>&gt;</span>Dropdown<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span>
+				<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"nav-link disabled"</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"-1"</span> <span class="hljs-attr">aria-disabled</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"true"</span>&gt;</span>Deshabilitado<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span>
+			<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+	<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">nav</span>&gt;</span></pre>
+				</div>
+			</div>
+
+			<hr class="mt-5" />
+
+			<div class="mt-4">
+				<h2>
+					Marca
+				</h2>
+				<p>
+					Para agregar una marca, podemos utilizar la clase <code>.navbar-brand</code> en un elemento <code>&lt;a&gt;</code> o <code>&lt;span&gt;</code>.
+				</p>
+			</div>
+			<div class="mt-4">
+				<h2>
+					Búsqueda
+				</h2>
+				<p>
+					También podríamos implementar un input de búsqueda! Para esto, vamos a utilizar la clase <code>.form-inline</code> en el elemento <code>&lt;form&gt;</code> y la clase <code>.form-control</code> en el elemento <code>&lt;input&gt;</code>.
+				</p>
+				<div>
+					<nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+						<div class="container-fluid">
+							<a class="navbar-brand">Navbar</a>
+							<form class="form-inline d-flex gap-2">
+							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+							</form>
+						</div>
+					</nav>
+				</div>
+				<div class="mt-2">
+<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"navbar navbar-light bg-light"</span>&gt;</span>
+	<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">form</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"form-inline"</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"form-control mr-sm-2"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"search"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"Search"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"Search"</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-outline-success my-2 my-sm-0"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"submit"</span>&gt;</span>Search<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+	<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">form</span>&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">nav</span>&gt;</span></pre>
+				</div>
+			</div>
+			<div class="mt-4">
+				<h2>
+					Colores
+				</h2>
+				<p>
+					Para cambiar el color de fondo de el navbar, podemos utilizar las clases <code>.navbar-light</code> si
+					 usamos un fondo claro, o <code>.navbar-dark</code> si usamos un fondo oscuro.<br/>
+					Luego, usamos las clases <code>bg-*</code> para cambiar el color de fondo.
+				</p>
+				<div>
+					<nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+						<div class="container-fluid">
+							<a class="navbar-brand">Navbar</a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNav">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="#">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Features</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Pricing</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="mt-2">
+					<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+						<div class="container-fluid">
+							<a class="navbar-brand">Navbar</a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNav">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="#">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Features</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Pricing</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="mt-2">
+					<nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded">
+						<div class="container-fluid">
+							<a class="navbar-brand">Navbar</a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNav">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="#">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Features</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Pricing</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+
+				<!--  -->
+				<div class="mt-4">
+<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="xml"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"navbar navbar-light bg-light"</span>&gt;</span>
+	<span class="hljs-comment" style="color: rgb(141, 134, 135);">&lt;!-- Contenido --&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">nav</span>&gt;</span>
+	
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"navbar navbar-dark bg-dark"</span>&gt;</span>
+	<span class="hljs-comment" style="color: rgb(141, 134, 135);">&lt;!-- Contenido --&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">nav</span>&gt;</span>
+	
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"navbar navbar-dark bg-primary"</span>&gt;</span>
+	<span class="hljs-comment" style="color: rgb(141, 134, 135);">&lt;!-- Contenido --&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">nav</span>&gt;</span></span></pre>
+				</div>
+			</div>
+		</div>
+		<div style="height: 50px;">
+		</div>
+		<footer class="d-flex justify-content-center">
+			<a class="btn btn-dark p-2 mt-5 mb-5" href="index.html">Volver a inicio</a>
+		</footer>
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
