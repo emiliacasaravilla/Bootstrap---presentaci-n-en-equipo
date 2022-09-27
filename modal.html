@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Modal</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+	</head>
+	<body>
+		<div class="container mt-4">
+			<h1>Modal</h1>
+			<p>
+				Los modals son ventanas emergentes dentro de la misma página, generalmente para mensajes de
+				confirmación, forms, etc.
+				Estas ventanas mantienen el focus de elementos, previenen el scroll en el resto de la página y 
+				son (idealmente) controlables con el teclado.
+			</p>
+
+			<h2>Ejemplos</h2>
+
+			<section>
+				<div>
+					<p>Primero, ¿qué es un modal?</p>
+					<div>
+						<!-- Button trigger modal -->
+						<button
+							type="button"
+							class="btn btn-primary"
+							data-bs-toggle="modal"
+							data-bs-target="#exampleModal"
+						>
+							Abrir
+						</button>
+
+						<!-- Modal -->
+						<div
+							class="modal fade"
+							id="exampleModal"
+							tabindex="-1"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Modal de ejemplo</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">...</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+											Cerrar
+										</button>
+										<button type="button" class="btn btn-primary">Guardar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mt-2">
+<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-comment" style="color: rgb(141, 134, 135);">&lt;!-- Botón para abrir --&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#exampleModal"</span>&gt;</span>
+	Abrir
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+
+<span class="hljs-comment" style="color: rgb(141, 134, 135);">&lt;!-- Modal --&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal fade"</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"exampleModal"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"-1"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"exampleModalLabel"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"true"</span>&gt;</span>
+	<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal-dialog"</span>&gt;</span>
+	<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal-content"</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal-header"</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal-title"</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"exampleModalLabel"</span>&gt;</span>Título<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">h5</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-close"</span> <span class="hljs-attr">data-bs-dismiss</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"Cerrar"</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal-body"</span>&gt;</span>
+		...
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal-footer"</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-secondary"</span> <span class="hljs-attr">data-bs-dismiss</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal"</span>&gt;</span>Cerrar<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary"</span>&gt;</span>Guardar cambios<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+	<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+	<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span></pre>
+					</div>
+				</div>
+
+				<hr class='my-5'/>
+
+				<div class="mt-5">
+					<p>Se pueden hacer modals donde el único escape es el botón de salida</p>
+					<div>
+						<!-- Button trigger modal -->
+						<button
+							type="button"
+							class="btn btn-primary"
+							data-bs-toggle="modal"
+							data-bs-target="#staticBackdrop"
+						>
+							Abrir, sin escape
+						</button>
+
+						<!-- Modal -->
+						<div
+							class="modal fade"
+							id="staticBackdrop"
+							data-bs-backdrop="static"
+							data-bs-keyboard="false"
+							tabindex="-1"
+							aria-labelledby="staticBackdropLabel"
+							aria-hidden="true"
+						>
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="staticBackdropLabel">Sin escape</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">...</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+											Cerrar
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mt-2">
+<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-comment" style="color: rgb(141, 134, 135);">&lt;!-- Botón para abrir --&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#staticBackdrop"</span>&gt;</span>
+	Abrir, sin escape
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+
+<span class="hljs-comment" style="color: rgb(141, 134, 135);">&lt;!-- Modal --&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal fade"</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"staticBackdrop"</span> <span class="hljs-attr">data-bs-backdrop</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"static"</span> <span class="hljs-attr">data-bs-keyboard</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"false"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"-1"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"staticBackdropLabel"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"true"</span>&gt;</span>
+	<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal-dialog"</span>&gt;</span>
+	<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal-content"</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal-header"</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal-title"</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"staticBackdropLabel"</span>&gt;</span>Título<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">h5</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-close"</span> <span class="hljs-attr">data-bs-dismiss</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"Close"</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal-body"</span>&gt;</span>
+		...
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal-footer"</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-secondary"</span> <span class="hljs-attr">data-bs-dismiss</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal"</span>&gt;</span>Cerrar<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary"</span>&gt;</span>Entendido<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+		<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+	<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+	<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span></pre>
+					</div>
+				</div>
+
+				<hr class='my-5'/>
+
+				<div class="mt-4">
+					<p>
+						Para cambiar sus tamaños, se le agrega al div <code>.modal-dialog</code> alguna de las clases 
+						<code>.modal-xl</code>, <code>.modal-lg</code> y <code>.modal-sm</code>
+					</p>
+					<div class="mt-4">
+						<!-- Button trigger modal -->
+						<button
+							type="button"
+							class="btn btn-primary"
+							data-bs-toggle="modal"
+							data-bs-target="#exampleModal2"
+						>
+							Modal XL
+						</button>
+
+						<!-- Modal -->
+						<div
+							class="modal fade"
+							id="exampleModal2"
+							tabindex="-1"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div class="modal-dialog modal-xl">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Modal de ejemplo</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">...</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+											Cerrar
+										</button>
+										<button type="button" class="btn btn-primary">Guardar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Button trigger modal -->
+						<button
+							type="button"
+							class="btn btn-primary"
+							data-bs-toggle="modal"
+							data-bs-target="#exampleModal3"
+						>
+							Modal SM
+						</button>
+
+						<!-- Modal -->
+						<div
+							class="modal fade"
+							id="exampleModal3"
+							tabindex="-1"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div class="modal-dialog modal-sm">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Modal de ejemplo</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">...</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+											Cerrar
+										</button>
+										<button type="button" class="btn btn-primary">Guardar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mt-2">
+<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal-dialog modal-xl"</span>&gt;</span>...<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal-dialog modal-lg"</span>&gt;</span>...<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal-dialog modal-sm"</span>&gt;</span>...<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span></pre>
+					</div>
+				</div>
+
+				<hr class='my-5'/>
+
+				<div class="mt-4">
+					<p>
+						Si se lo quisiera centrar, se le agrega al div <code>.modal-dialog</code> la clase
+						<code>.modal-dialog-centered</code>
+					</p>
+					<div>
+						<!-- Button trigger modal -->
+						<button
+							type="button"
+							class="btn btn-primary"
+							data-bs-toggle="modal"
+							data-bs-target="#exampleModal4"
+						>
+							Centrado
+						</button>
+
+						<!-- Modal -->
+						<div
+							class="modal fade"
+							id="exampleModal4"
+							tabindex="-1"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Modal de ejemplo</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">...</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+											Cerrar
+										</button>
+										<button type="button" class="btn btn-primary">Guardar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mt-2">
+<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"modal-dialog modal-dialog-centered"</span>&gt;</span>
+...
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span></pre>
+					</div>
+				</div>
+
+				<hr class='my-5'/>
+
+				<div class="mt-4">
+					<h3>Ejemplo</h3>
+					<p>
+						Generalmente, se utiliza para evitar agregar contenido que se usa eventualmente en la página,
+						de manera que no ocupe lugar innecesariamente.
+					</p>
+					<div>
+						<!-- Button trigger modal -->
+						<button
+							type="button"
+							class="btn btn-primary"
+							data-bs-toggle="modal"
+							data-bs-target="#exampleModal6"
+						>
+							Enviar un mensaje
+						</button>
+
+						<!-- Modal -->
+						<div
+							class="modal fade"
+							id="exampleModal6"
+							tabindex="-1"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Enviar mensaje</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">
+										<div>
+											<form>
+												<div class="mb-3">
+													<label for="recipient-name" class="col-form-label">Para:</label>
+													<input type="text" class="form-control" id="recipient-name">
+												</div>
+												<div class="mb-3">
+													<label for="message-text" class="col-form-label">Mensaje:</label>
+													<textarea class="form-control" id="message-text"></textarea>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-primary">Enviar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="d-flex justify-content-center">
+				<a class="btn btn-dark p-2 mt-5 mb-5" href="index.html">Volver a inicio</a>
+			</footer>
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

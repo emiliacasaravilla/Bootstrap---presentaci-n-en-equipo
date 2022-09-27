@@ -50,9 +50,14 @@
         <hr class="mt-5 mb-5" style="width: 100%"> 
         
         <div class="mb-5 w-75">
-            <h4 class="text-center mb-4">Este es un carrusel de imágenes normal, pero tiene
+            <h4 class="text-center">Este es un carrusel de imágenes normal, pero tiene
                 controles para avanzar o retroceder de imagen, esto lo logramos con los botones
                 de clase <b>carousel-control-prev</b> y <b>carousel-control-next</b>.
+            </h4>
+            <h4 class="text-center mb-4">
+                Para cambiar el tiempo de intervalos entre imagen e imagen, podemos utilizar el atributo
+                <b>data-bs-interval</b> en nuestro elemento carousel, que obtiene un valor de tiempo en milisegundos.
+                También se puede asignar un <b>data-bs-interval</b> a cada item de forma individual.
             </h4>
             <div class="alert alert-warning mb-5 text-center">
                 ¡Cuidado! Para que estos controles funcionen, tienen que tener un atributo <b>id</b>
@@ -62,13 +67,13 @@
             <div id="carouselConControles" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                 <div class="carousel-inner rounded">
                     <div class="carousel-item active">
-                    <img src="img/fox-bus-stop.jpg" class="d-block w-100" alt="...">
+                        <img src="img/fox-bus-stop.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                    <img src="img/lone-wolf.jpg" class="d-block w-100" alt="...">
+                        <img src="img/lone-wolf.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                    <img src="img/penguins-in-the-night.jpg" class="d-block w-100" alt="...">
+                        <img src="img/penguins-in-the-night.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselConControles" data-bs-slide="prev">
@@ -83,13 +88,13 @@
             <pre class="hljs mt-4 rounded" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carouselConControles"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel slide"</span> <span class="hljs-attr">data-bs-ride</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel"</span> <span class="hljs-attr">data-bs-interval</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"2000"</span>&gt;</span>
         <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-inner rounded"</span>&gt;</span>
         <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-item active"</span>&gt;</span>
-        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"img/fox-bus-stop.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"..."</span>&gt;</span>
+            <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"img/fox-bus-stop.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"..."</span>&gt;</span>
         <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
         <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-item"</span>&gt;</span>
-        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"img/lone-wolf.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"..."</span>&gt;</span>
+            <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"img/lone-wolf.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"..."</span>&gt;</span>
         <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
         <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-item"</span>&gt;</span>
-        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"img/penguins-in-the-night.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"..."</span>&gt;</span>
+            <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"img/penguins-in-the-night.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"..."</span>&gt;</span>
         <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
     <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
     <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-control-prev"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#carouselConControles"</span> <span class="hljs-attr">data-bs-slide</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"prev"</span>&gt;</span>
@@ -109,11 +114,15 @@
                 click en estos indicadores para cambiar de imagen, y también sirven como
                 identificador visual, para saber en qué imagen estamos actualmente.
             </h4>
+            <h4 class="text-center mb-4">
+                Si prestás atención, podés notar que los indicadores y controles son negros.
+                Esto sucede cuando agregamos la clase <b>carousel-dark</b> a nuestro carousel.
+            </h4>
             <div class="alert alert-warning mb-5 text-center">
                 Al igual que con los controles anteriores, estos indicadores necesitan de un <b>id</b>
                 y un atributo <b>data-bs-target</b>
             </div>
-            <div id="carouselConIndicadores" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div id="carouselConIndicadores" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="2000">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselConIndicadores" 
                             data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
@@ -127,13 +136,13 @@
                 </div>
                 <div class="carousel-inner rounded">
                     <div class="carousel-item active">
-                    <img src="img/horizon-clouds-sea-sunset-calm.jpg" class="d-block w-100" alt="...">
+                        <img src="img/horizon-clouds-sea-sunset-calm.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                    <img src="img/anime-road-to-city-everlasting.jpg" class="d-block w-100" alt="...">
+                        <img src="img/anime-road-to-city-everlasting.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                    <img src="img/nebula-sakura-cherry.jpg" class="d-block w-100" alt="...">
+                        <img src="img/nebula-sakura-cherry.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselConIndicadores" 
@@ -147,7 +156,7 @@
                     <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
-            <pre class="hljs mt-4 rounded" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carouselConIndicadores"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel slide"</span> <span class="hljs-attr">data-bs-ride</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel"</span> <span class="hljs-attr">data-bs-interval</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"2000"</span>&gt;</span>
+            <pre class="hljs mt-4 rounded" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carouselConIndicadores"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel carousel-dark slide"</span> <span class="hljs-attr">data-bs-ride</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel"</span> <span class="hljs-attr">data-bs-interval</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"2000"</span>&gt;</span>
             <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-indicators"</span>&gt;</span>
                 <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#carouselConIndicadores"</span> 
                         <span class="hljs-attr">data-bs-slide-to</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"0"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"active"</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"true"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"Slide 1"</span>&gt;</span>
@@ -161,13 +170,13 @@
             <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
             <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-inner rounded"</span>&gt;</span>
                 <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-item active"</span>&gt;</span>
-                <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"img/horizon-clouds-sea-sunset-calm.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"..."</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"img/horizon-clouds-sea-sunset-calm.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"..."</span>&gt;</span>
                 <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
                 <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-item"</span>&gt;</span>
-                <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"img/anime-road-to-city-everlasting.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"..."</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"img/anime-road-to-city-everlasting.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"..."</span>&gt;</span>
                 <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
                 <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-item"</span>&gt;</span>
-                <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"img/nebula-sakura-cherry.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"..."</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"img/nebula-sakura-cherry.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"..."</span>&gt;</span>
                 <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
             <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
             <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-control-prev"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#carouselConIndicadores"</span> 
@@ -186,7 +195,7 @@
 
         <div class="w-75">
             <h4 class="text-center">
-                Este bonito carousel es igual que el anterior, pero tiene subtítulos agregados.
+                Este bonito carousel tiene indicadores y controles, pero también tiene subtítulos agregados.
                 ¿Cómo hacemos esto? ¡Fácil! en el mismo contenedor donde van las imágenes (<b>carousel-item</b>)
                 agregamos un <b>&lt;div&gt;</b> de clase <b>carousel-caption</b> que tenga un <b>&lt;h5&gt;</b>(a elección)
                 y un <b>&lt;p&gt;</b>(a elección) como subtítulo y descripción, respectivamente.
@@ -204,27 +213,27 @@
                     <button type="button" data-bs-target="#carouselConSubtitulos" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner">
+                <div class="carousel-inner rounded">
                     <div class="carousel-item active">
-                        <img src="img/morning-glow-grass-field.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Subtítulo de primera imagen</h5>
-                            <p>Texto descriptivo o relevante sobre la primera imagen.</p>
-                        </div>
+                            <img src="img/morning-glow-grass-field.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Subtítulo de primera imagen</h5>
+                                <p>Texto descriptivo o relevante sobre la primera imagen.</p>
+                            </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/omega-sunrise.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Subtítulo de segunda imagen</h5>
-                            <p>Texto descriptivo o relevante sobre la segunda imagen.</p>
-                        </div>
+                            <img src="img/omega-sunrise.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Subtítulo de segunda imagen</h5>
+                                <p>Texto descriptivo o relevante sobre la segunda imagen.</p>
+                            </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/blossom-flower-field.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Subtítulo de tercera imagen</h5>
-                            <p>Texto descriptivo o relevante sobre la tercera imagen.</p>
-                        </div>
+                            <img src="img/blossom-flower-field.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Subtítulo de tercera imagen</h5>
+                                <p>Texto descriptivo o relevante sobre la tercera imagen.</p>
+                            </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselConSubtitulos" data-bs-slide="prev">
@@ -248,40 +257,46 @@
             <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
             <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-inner"</span>&gt;</span>
                 <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-item active"</span>&gt;</span>
-                <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"img/morning-glow-grass-field.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"..."</span>&gt;</span>
-                <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-caption d-none d-md-block"</span>&gt;</span>
-                    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">h5</span>&gt;</span>Subtítulo de primera imagen<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">h5</span>&gt;</span>
-                    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">p</span>&gt;</span>Texto descriptivo o relevante sobre la primera imagen.<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">p</span>&gt;</span>
-                <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
-                <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
-                <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-item"</span>&gt;</span>
-                <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"img/omega-sunrise.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"..."</span>&gt;</span>
-                <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-caption d-none d-md-block"</span>&gt;</span>
-                    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">h5</span>&gt;</span>Subtítulo de segunda imagen<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">h5</span>&gt;</span>
-                    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">p</span>&gt;</span>Texto descriptivo o relevante sobre la segunda imagen.<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">p</span>&gt;</span>
-                <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"img/morning-glow-grass-field.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"..."</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-caption d-none d-md-block"</span>&gt;</span>
+                        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">h5</span>&gt;</span>Subtítulo de primera imagen<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">h5</span>&gt;</span>
+                        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">p</span>&gt;</span>Texto descriptivo o relevante sobre la primera imagen.<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">p</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
                 <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
                 <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-item"</span>&gt;</span>
-                <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"img/blossom-flower-field.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"..."</span>&gt;</span>
-                <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-caption d-none d-md-block"</span>&gt;</span>
-                    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">h5</span>&gt;</span>Subtítulo de tercera imagen<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">h5</span>&gt;</span>
-                    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">p</span>&gt;</span>Texto descriptivo o relevante sobre la tercera imagen.<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">p</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"img/omega-sunrise.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"..."</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-caption d-none d-md-block"</span>&gt;</span>
+                        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">h5</span>&gt;</span>Subtítulo de segunda imagen<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">h5</span>&gt;</span>
+                        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">p</span>&gt;</span>Texto descriptivo o relevante sobre la segunda imagen.<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">p</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
                 <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-item"</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"img/blossom-flower-field.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"..."</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-caption d-none d-md-block"</span>&gt;</span>
+                        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">h5</span>&gt;</span>Subtítulo de tercera imagen<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">h5</span>&gt;</span>
+                        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">p</span>&gt;</span>Texto descriptivo o relevante sobre la tercera imagen.<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">p</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
                 <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
             <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
             <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-control-prev"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#carouselConSubtitulos"</span> 
-        <span class="hljs-attr">data-bs-slide</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"prev"</span>&gt;</span>
+                <span class="hljs-attr">data-bs-slide</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"prev"</span>&gt;</span>
                 <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-control-prev-icon"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"true"</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">span</span>&gt;</span>
                 <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"visually-hidden"</span>&gt;</span>Anterior<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">span</span>&gt;</span>
             <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
             <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-control-next"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#carouselConSubtitulos"</span> 
-        <span class="hljs-attr">data-bs-slide</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"next"</span>&gt;</span>
+                <span class="hljs-attr">data-bs-slide</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"next"</span>&gt;</span>
                 <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"carousel-control-next-icon"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"true"</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">span</span>&gt;</span>
                 <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"visually-hidden"</span>&gt;</span>Siguiente<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">span</span>&gt;</span>
             <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
 <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span></pre>
         </div>
+        <h6 class="text-muted fst-italic mt-3">Todas las imágenes utilizadas fueron obtenidas de: 
+            <a href="https://www.hdqwalls.com">hdqwalls.com</a></h6>
+        <footer class="d-flex justify-content-center">
+            <a class="btn btn-dark p-2 mt-4" href="index.html">Volver a inicio</a>
+        </footer>
     </div>
+    
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
