@@ -6,3 +6,7 @@ body {
 #buttonsDescription {
     background-color: rgba(0, 0, 0, 0.35);
 }
+
+#alertas-con-link {
+    margin-top: 12rem;
+}
