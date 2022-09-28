@@ -11,11 +11,11 @@
 <body>
     <div class="container mb-5 mt-5 d-flex flex-column align-items-center">
         <div class="dropdown w-75">
-            <button class="btn btn-primary dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 <h3 class="text-wrap">
-                    Los dropdown suelen ser botones o enlaces que sirven para desplegar una serie de opciones,
-                    estas se utilizan para redireccionar a otras páginas o para elegir una opción específica,
-                    ya sea estética, o de funcionalidad.
+                    Los dropdown son botones (del tipo button o del tipo a) que sirven para desplegar una serie 
+                    de opciones, estas se utilizan para redireccionar a otras páginas o para elegir una opción
+                    específica, ya sea estética, o de funcionalidad.
                 </h3>
             </button>
             <ul class="dropdown-menu w-50 text-center" aria-labelledby="dropdownMenuButton1">
@@ -27,11 +27,11 @@
             </ul>
         </div>
         <pre class="hljs mt-4 rounded" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown w-75"</span>&gt;</span>
-    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary dropdown-toggle w-100"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdownMenuButton1"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"false"</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary dropdown-toggle"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdownMenuButton1"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"false"</span>&gt;</span>
         <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"text-wrap"</span>&gt;</span>
-            Los dropdown suelen ser botones o enlaces que sirven para desplegar una serie de opciones,
-            estas se utilizan para redireccionar a otras páginas o para elegir una opción específica,
-            ya sea estética, o de funcionalidad.
+            Los dropdown son botones (del tipo button o del tipo a) que sirven para desplegar una serie 
+            de opciones, estas se utilizan para redireccionar a otras páginas o para elegir una opción
+            específica, ya sea estética, o de funcionalidad.
         <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">h3</span>&gt;</span>
     <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
     <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-menu w-50 text-center"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdownMenuButton1"</span>&gt;</span>
@@ -45,7 +45,7 @@
         
         <hr class="mt-5 mb-5" style="width: 100%">
 
-        <div class="btn-group">
+        <div class="btn-group mb-4">
             <button type="button" class="btn btn-primary dropdown-toggle me-2" data-bs-toggle="dropdown" aria-expanded="false">
                 También
             </button>
@@ -66,16 +66,19 @@
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Enlace aparte</a></li>
             </ul>
-            <button type="button" class="btn btn-success btn-lg dropdown-toggle me-2" data-bs-toggle="dropdown" aria-expanded="false">
-                comportan
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Una acción</a></li>
-                <li><a class="dropdown-item" href="#">Otra acción</a></li>
-                <li><a class="dropdown-item" href="#">Alguna otra cosa</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Enlace aparte</a></li>
-            </ul>
+            <div class="btn-group dropup">
+                <button type="button" class="btn btn-success btn-lg dropdown-toggle me-2" data-bs-toggle="dropdown" aria-expanded="false">
+                    comportan
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><h6 class="dropdown-header">Yo soy un header y sirvo para nombrar secciones</h6></li>
+                    <li><a class="dropdown-item" href="#">Me despliego hacia arriba porque soy malote</a></li>
+                    <li><a class="dropdown-item" href="#">Soy un conejillo de indias</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Yo tengo la clase disabled :(</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Enlace aparte</a></li>
+                </ul>
+            </div>
             <button type="button" class="btn btn-info dropdown-toggle me-2" data-bs-toggle="dropdown" aria-expanded="false">
                 como
             </button>
@@ -107,50 +110,122 @@
                 <li><a class="dropdown-item" href="#">Enlace aparte</a></li>
             </ul>
         </div>
-        <pre class="hljs mt-4 rounded" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;">//Ejemplo de botón "comportan"
-<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-group"</span>&gt;</span>
-        ...
+        <pre class="hljs mt-4 rounded" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;">//Código para el botón "comportan"
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-group dropup"</span>&gt;</span>
         <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-success btn-lg dropdown-toggle me-2"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"false"</span>&gt;</span>
             comportan
         <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
         <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-menu"</span>&gt;</span>
-            <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#"</span>&gt;</span>Una acción<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span>
+            <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">h6</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-header"</span>&gt;</span>Yo soy un header y sirvo para nombrar secciones<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">h6</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span>
+            <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#"</span>&gt;</span>Me despliego hacia arriba porque soy malote<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span>
             <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#"</span>&gt;</span>Otra acción<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span>
-            <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#"</span>&gt;</span>Alguna otra cosa<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span>
+            <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-item disabled"</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#"</span>&gt;</span>Yo tengo la clase disabled :(<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span>
             <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-divider"</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span>
             <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"#"</span>&gt;</span>Enlace aparte<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span>
         <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">ul</span>&gt;</span>
-        ...
 <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span></pre>
         <hr class="mt-5 mb-5" style="width: 100%">
 
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Navbar</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
+        <div class="d-flex flex-row mt-2">
+                <div class="btn-group me-2">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="defaultDropdown" 
+                    data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                        Dropdown por defecto
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+                        <li><a class="dropdown-item">Ítem del menú</a></li>
+                        <li><a class="dropdown-item">Ítem del menú</a></li>
+                        <li><a class="dropdown-item">Ítem del menú</a></li>
                     </ul>
-                  </div>
                 </div>
-              </nav>
+
+                <div class="btn-group me-2">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuClickableOutside" 
+                    data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+                        Puedo clickear afuera
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableOutside">
+                        <li><a class="dropdown-item">Ítem del menú</a></li>
+                        <li><a class="dropdown-item">Ítem del menú</a></li>
+                        <li><a class="dropdown-item">Ítem del menú</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group me-2">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuClickableInside" 
+                    data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        Puedo clickear los ítem
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                        <li><a class="dropdown-item">Ítem del menú</a></li>
+                        <li><a class="dropdown-item">Ítem del menú</a></li>
+                        <li><a class="dropdown-item">Ítem del menú</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group me-2">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuClickable" 
+                    data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                        Se cierra de forma manual
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickable">
+                        <li><a class="dropdown-item">Ítem del menú</a></li>
+                        <li><a class="dropdown-item">Ítem del menú</a></li>
+                        <li><a class="dropdown-item">Ítem del menú</a></li>
+                    </ul>
+                </div>
         </div>
-          <footer class="d-flex justify-content-center">
-            <a class="btn btn-dark p-2 mt-4" href="index.html">Volver a inicio</a>
-          </footer>
+<pre class="hljs mt-4 rounded" style="display: block; overflow-x: auto; background: rgb(47, 30, 46); color: rgb(163, 158, 155); padding: 0.5em;"><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-group me-2"</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary dropdown-toggle"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"defaultDropdown"</span> 
+    <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown"</span> <span class="hljs-attr">data-bs-auto-close</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"true"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"false"</span>&gt;</span>
+        Dropdown por defecto
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-menu"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"defaultDropdown"</span>&gt;</span>
+        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-item"</span>&gt;</span>Ítem del menú<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span>
+        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-item"</span>&gt;</span>Ítem del menú<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span>
+        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-item"</span>&gt;</span>Ítem del menú<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">ul</span>&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-group me-2"</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary dropdown-toggle"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdownMenuClickableOutside"</span> 
+    <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown"</span> <span class="hljs-attr">data-bs-auto-close</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"inside"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"false"</span>&gt;</span>
+        Puedo clickear afuera
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-menu"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdownMenuClickableOutside"</span>&gt;</span>
+        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-item"</span>&gt;</span>Ítem del menú<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span>
+        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-item"</span>&gt;</span>Ítem del menú<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span>
+        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-item"</span>&gt;</span>Ítem del menú<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">ul</span>&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-group me-2"</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary dropdown-toggle"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdownMenuClickableInside"</span> 
+    <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown"</span> <span class="hljs-attr">data-bs-auto-close</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"outside"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"false"</span>&gt;</span>
+        Puedo clickear los ítem
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-menu"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdownMenuClickableInside"</span>&gt;</span>
+        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-item"</span>&gt;</span>Ítem del menú<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span>
+        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-item"</span>&gt;</span>Ítem del menú<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span>
+        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-item"</span>&gt;</span>Ítem del menú<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">ul</span>&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span>
+
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn-group me-2"</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"btn btn-primary dropdown-toggle"</span> <span class="hljs-attr">type</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"button"</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdownMenuClickable"</span> 
+    <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown"</span> <span class="hljs-attr">data-bs-auto-close</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"false"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"false"</span>&gt;</span>
+        Se cierra de forma manual
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">button</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-menu"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdownMenuClickable"</span>&gt;</span>
+        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-item"</span>&gt;</span>Ítem del menú<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span>
+        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-item"</span>&gt;</span>Ítem del menú<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span>
+        <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(72, 182, 133);">"dropdown-item"</span>&gt;</span>Ítem del menú<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">a</span>&gt;</span><span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">li</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">ul</span>&gt;</span>
+<span class="hljs-tag" style="color: rgb(239, 97, 85);">&lt;/<span class="hljs-name" style="color: rgb(239, 97, 85);">div</span>&gt;</span></pre>
+
+        <footer class="d-flex justify-content-center">
+        <a class="btn btn-dark p-2 mt-4" href="index.html">Volver a inicio</a>
+        </footer>
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
